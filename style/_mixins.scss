@@ -1,0 +1,24 @@
+@import  'variables';
+@mixin desktop {
+    @media only screen and (max-width: #{$desktop_devices}){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media only screen and (max-width: #{$tablet_devices}){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media only screen and (max-width: #{$mobile_devices}){
+        @content;
+    }
+}
+
+@mixin extra_small{
+    @media only screen and (max-width: #{$extra_small_devices}){
+        @content;
+    }
+}
