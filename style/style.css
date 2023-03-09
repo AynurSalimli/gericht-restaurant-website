@@ -56,6 +56,76 @@
   font-size: 16px;
 }
 
+.footer {
+  background-color: #000;
+  height: 200px;
+}
+.footer__item {
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+}
+.footer__item--contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__item--contact--title {
+  justify-content: center;
+  display: flex;
+}
+.footer__item--contact--country {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+.footer__item--contact--mobile {
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+.footer__item--logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.footer__item--logo--name {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: #dcca87;
+}
+.footer__item--logo--desc {
+  font-family: "Open Sans";
+  font-size: 12px;
+  width: 300px;
+  text-align: center;
+}
+.footer__item--logo--social {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+.footer__item--working {
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__item--working--title {
+  justify-content: center;
+  display: flex;
+}
+.footer__item--working--hours {
+  display: flex;
+  width: 220px;
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
 .flavour {
   padding: 70px;
   width: 100%;
@@ -249,7 +319,7 @@
 }
 
 .menu {
-  background: url("../assets/coniac.png");
+  background: url("../assets/home/coniac.png");
   background-color: #000;
   opacity: 0.3;
   background-position: center;
@@ -456,7 +526,7 @@
 }
 
 .restaurant {
-  background-image: url("../assets/restaurant.png");
+  background-image: url("../assets/home/restaurant.png");
   height: 600px;
   background-repeat: no-repeat;
   -o-object-fit: cover;
@@ -744,74 +814,4 @@
   outline: none;
   background-color: #dcca87;
   cursor: pointer;
-}
-
-.footer {
-  background-color: #000;
-  height: 200px;
-}
-.footer__item {
-  display: flex;
-  gap: 56px;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  color: #fff;
-}
-.footer__item--contact {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.footer__item--contact--title {
-  justify-content: center;
-  display: flex;
-}
-.footer__item--contact--country {
-  font-family: "Open Sans";
-  font-size: 12px;
-}
-.footer__item--contact--mobile {
-  font-family: "Open Sans";
-  font-size: 12px;
-}
-.footer__item--logo {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-.footer__item--logo--name {
-  text-transform: uppercase;
-  font-size: 40px;
-  color: #dcca87;
-}
-.footer__item--logo--desc {
-  font-family: "Open Sans";
-  font-size: 12px;
-  width: 300px;
-  text-align: center;
-}
-.footer__item--logo--social {
-  display: flex;
-  gap: 10px;
-  cursor: pointer;
-}
-.footer__item--working {
-  gap: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-.footer__item--working--title {
-  justify-content: center;
-  display: flex;
-}
-.footer__item--working--hours {
-  display: flex;
-  width: 220px;
-  font-family: "Open Sans";
-  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */

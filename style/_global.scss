@@ -1,0 +1,129 @@
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Cormorant Upright";
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #dcca87;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .header {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    z-index: 3;
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+    &__logo {
+      font-size: 34px;
+      font-family: "Cormorant";
+      text-transform: uppercase;
+    }
+    ul {
+      display: flex;
+      gap: 25px;
+      a {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .footer {
+    background-color: #000;
+    height: 200px;
+    &__item {
+      display: flex;
+      gap: 56px;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      color: #fff;
+      &--contact {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &--title {
+          justify-content: center;
+          display: flex;
+        }
+        &--country {
+          font-family: "Open Sans";
+          font-size: 12px;
+        }
+        &--mobile {
+          font-family: "Open Sans";
+          font-size: 12px;
+        }
+      }
+  
+      &--logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        &--name {
+          text-transform: uppercase;
+          font-size: 40px;
+          color: #dcca87;
+        }
+  
+        &--desc {
+          font-family: "Open Sans";
+          font-size: 12px;
+          width: 300px;
+          text-align: center;
+        }
+        &--social {
+          display: flex;
+          gap: 10px;
+          cursor: pointer;
+        }
+      }
+  
+      &--working {
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        &--title {
+          justify-content: center;
+          display: flex;
+        }
+        &--hours {
+          display: flex;
+          width: 220px;
+          font-family: "Open Sans";
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  
