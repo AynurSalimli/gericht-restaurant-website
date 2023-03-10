@@ -9,12 +9,32 @@
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 767px) {
+  .flavour-wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .flavour__text {
   display: flex;
   flex-direction: column;
   padding: 40px;
   gap: 70px;
   line-height: 30px;
+}
+@media only screen and (max-width: 991px) {
+  .flavour__text {
+    width: 365px;
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .flavour__text {
+    gap: 20px;
+    margin: auto;
+    width: 300px;
+    display: flex;
+  }
 }
 .flavour__text--title {
   font-size: 20px;
@@ -26,11 +46,28 @@
   color: #dcca87;
   line-height: 70px;
 }
+@media only screen and (max-width: 767px) {
+  .flavour__text--header {
+    width: 200px;
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
 .flavour__text--desc {
   color: #fff;
   font-family: "open sans";
   width: 450px;
   font-size: 14px;
+}
+@media only screen and (max-width: 991px) {
+  .flavour__text--desc {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .flavour__text--desc {
+    width: 200px;
+  }
 }
 .flavour__text--btn {
   width: 100px;
@@ -40,10 +77,38 @@
   background-color: #dcca87;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) {
+  .flavour__image {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .flavour__image {
+    width: 400px;
+  }
+}
 .flavour__image img {
-  width: 550px;
-  height: 650px;
+  width: 450px;
+  height: 550px;
   padding: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .flavour__image img {
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .flavour__image img {
+    width: 300px;
+    height: 380px;
+    margin: auto;
+    padding-top: 10px;
+  }
 }
 
 .knife {
@@ -57,7 +122,7 @@
   gap: 70px;
 }
 .knife__about {
-  width: 500px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -148,76 +213,6 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
-}
-
-.booking {
-  background-color: #000;
-  width: 100%;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-}
-.booking-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  width: 900px;
-  background-color: #262523;
-  padding: 20px;
-}
-.booking__title {
-  font-size: 64px;
-  color: #dcca87;
-}
-.booking__options {
-  display: flex;
-  gap: 20px;
-}
-.booking__options #persons {
-  width: 240px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.6117647059);
-  outline: none;
-  border: none;
-  color: #fff;
-}
-.booking__btn {
-  width: 100px;
-  height: 30px;
-  border: none;
-  outline: none;
-  background-color: #dcca87;
-  cursor: pointer;
-}
-
-.menu {
-  background: url("../assets/home/coniac.png");
-  background-color: #000;
-  opacity: 0.3;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  background-color: black;
-  opacity: 0.96;
-}
-.menu__list {
-  color: #fff;
-  position: relative;
-  top: 100px;
-  font-size: 40px;
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.menu__list--item {
-  cursor: pointer;
-}
-.menu__list--item:hover {
-  text-decoration: underline;
-  color: #fff;
 }
 
 .special {
@@ -631,68 +626,10 @@
   right: 5px;
 }
 
-.subscribe {
-  background-color: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 30px;
-  padding: 75px 0;
-}
-.subscribe-wrapper {
-  background-color: #0c0c0c;
-  height: 270px;
-  width: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-.subscribe__title {
-  color: #fff;
-  padding-top: 20px;
-}
-.subscribe__header {
-  color: #dcca87;
-  font-size: 35px;
-}
-.subscribe__subtitle {
-  font-family: "Open Sans";
-  font-size: 12px;
-  color: #fff;
-}
-.subscribe__email {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding-top: 20px;
-}
-.subscribe__email--input {
-  width: 400px;
-  height: 40px;
-  background-color: #000;
-  border: 1px solid #f5efdb;
-  color: white;
-  padding-left: 5px;
-}
-.subscribe__email--input::-moz-placeholder {
-  color: #fff;
-}
-.subscribe__email--input::placeholder {
-  color: #fff;
-}
-.subscribe__email--btn {
-  width: 100px;
-  height: 30px;
-  border: none;
-  outline: none;
-  background-color: #dcca87;
-  cursor: pointer;
-}
-
 .container {
   max-width: 1350px;
   margin: 0 auto;
+  background-color: var(--color-primary);
 }
 
 * {
@@ -737,18 +674,31 @@
   font-family: "Cormorant";
   text-transform: uppercase;
 }
-.header ul {
+.header__menu {
   display: flex;
   gap: 25px;
 }
-.header ul a {
+.header__menu a {
   color: #fff;
   font-size: 16px;
 }
+@media only screen and (max-width: 991px) {
+  .header__menu a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header .login {
+    display: none;
+  }
+}
 
 .footer {
-  background-color: #000;
-  height: 200px;
+  position: relative;
+  bottom: 0;
+  padding-top: 70px;
+  background-color: #000000;
+  height: 300px;
 }
 .footer__item {
   display: flex;
@@ -819,6 +769,7 @@
 .container {
   max-width: 1350px;
   margin: 0 auto;
+  background-color: var(--color-primary);
 }
 
 * {
@@ -863,18 +814,31 @@
   font-family: "Cormorant";
   text-transform: uppercase;
 }
-.header ul {
+.header__menu {
   display: flex;
   gap: 25px;
 }
-.header ul a {
+.header__menu a {
   color: #fff;
   font-size: 16px;
 }
+@media only screen and (max-width: 991px) {
+  .header__menu a {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .header .login {
+    display: none;
+  }
+}
 
 .footer {
-  background-color: #000;
-  height: 200px;
+  position: relative;
+  bottom: 0;
+  padding-top: 70px;
+  background-color: #000000;
+  height: 300px;
 }
 .footer__item {
   display: flex;
@@ -1016,4 +980,157 @@
   background-color: transparent;
   border: 1px solid #fff;
   color: #fff;
+}
+
+.menu {
+  background: url("../assets/home/coniac.png");
+  background-color: #000;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  background-color: black;
+  opacity: 0.96;
+}
+.menu__list {
+  color: #fff;
+  position: relative;
+  top: 100px;
+  font-size: 40px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.menu__list--item {
+  cursor: pointer;
+}
+.menu__list--item:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.booking {
+  background-color: #000;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+}
+.booking-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  width: 900px;
+  background-color: #262523;
+  padding: 20px;
+}
+.booking__title {
+  font-size: 64px;
+  color: #dcca87;
+}
+.booking__options {
+  display: flex;
+  gap: 20px;
+}
+.booking__options #persons {
+  width: 240px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6117647059);
+  outline: none;
+  border: none;
+  color: #fff;
+}
+.booking__btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+  cursor: pointer;
+}
+
+.hours {
+  height: 450px;
+  max-width: 100%;
+  width: 100%;
+  background-image: url("../assets/services/happyhours.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hours .container {
+  height: 500px;
+}
+.hours__header {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: #dcca87;
+}
+.hours__desc {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+.subscribe {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding: 75px 0;
+}
+.subscribe-wrapper {
+  background-color: #0c0c0c;
+  height: 270px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.subscribe__title {
+  color: #fff;
+  padding-top: 20px;
+}
+.subscribe__header {
+  color: #dcca87;
+  font-size: 35px;
+}
+.subscribe__subtitle {
+  font-family: "Open Sans";
+  font-size: 12px;
+  color: #fff;
+}
+.subscribe__email {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-top: 20px;
+}
+.subscribe__email--input {
+  width: 400px;
+  height: 40px;
+  background-color: #000;
+  border: 1px solid #f5efdb;
+  color: white;
+  padding-left: 5px;
+}
+.subscribe__email--input::-moz-placeholder {
+  color: #fff;
+}
+.subscribe__email--input::placeholder {
+  color: #fff;
+}
+.subscribe__email--btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: #dcca87;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
