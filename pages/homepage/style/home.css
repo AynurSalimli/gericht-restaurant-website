@@ -42,6 +42,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  width: 100%;
 }
 .header__logo {
   font-size: 34px;
@@ -219,14 +220,9 @@
 }
 @media only screen and (max-width: 767px) {
   .flavour__image {
-    text-align: center;
     margin: auto;
     width: 300px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .flavour__image {
-    width: 400px;
+    display: flex;
   }
 }
 .flavour__image img {
@@ -245,7 +241,7 @@
 @media only screen and (max-width: 767px) {
   .flavour__image img {
     width: 300px;
-    height: 380px;
+    height: 350px;
     margin: auto;
     padding-top: 10px;
   }
