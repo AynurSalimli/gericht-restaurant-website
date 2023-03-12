@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/168/168570.png">
     <title>Gericht</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="./style/home.css"/>
   </head>
@@ -46,7 +47,7 @@
       </div>
     </section>
 
-   <!-- <section class="knife">
+   <section class="knife">
       <div class="container">
         <div class="knife-wrapper">
           <div class="knife__about">
@@ -75,7 +76,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <section class="special">
       <div class="container">
@@ -106,7 +107,7 @@
       </div>
     </section>
 
-    <section class="chef">
+   <section class="chef">
       <div class="container">
         <div class="chef-wrapper">
           <div class="chef__img" >
@@ -128,7 +129,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> 
 
     <section class="customer">
       <div class="container">
@@ -168,17 +169,15 @@
               <p class="customer__table--about--position">Chef</p>
             </div>
             </div>
-          
+
             <div class="customer__table--about">
               <img src="../../assets/home/olivier-rule-RKqIIjqWRak-unsplash 1.jpg" alt="" class="customer__img">
             <div class="customer__table--about--text">
               <p class="customer__table--about--desc">Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue.</p>
               <p class="customer__table--about--name">Brooklyn Simmons</p>
-              <p class="customer__table--about--position">              <p class="customer__table--about--position">Caterer</p>
-            </p>
+              <p class="customer__table--about--position">Caterer</p>
             </div>
-            </div>
-            
+            </div>    
           </div>
       </div>
     </section>
@@ -259,9 +258,9 @@
       </div>
     </section>
 
-    <section class="gallery">
+   <section class="gallery">
       <div class="container">
-        <div class="section-wrapper">
+        <div class="gallery-wrapper">
           <div class="gallery__text">
             <h5 class="gallery__text--title"  
             >Instagram</h5>
@@ -270,32 +269,38 @@
             <button class="gallery__text--btn">View More</button>
           </div>
 
-          <div class="gallery__img">
-            <div class="gallery__img--sliders">
-              <div class="gallery__img--sliders--slider show">
-                <img src="../../assets/home/gallery1.jpg" alt="">
-                <img src="../../assets/home/gallery-2.jpg" alt="">
-                <img src="../../assets/home/update-4.jpg" alt="">
+         
+           <div class="gallery__img">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../../assets/home/rachel-park-hrlvr2ZlUNk-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/home/dan-gold-4_jhDO54BYg-unsplash.jpg" class="d-block w-100" alt="..." >
+                </div>
+                <div class="carousel-item">
+                  <img src="../../assets/home/lily-banse--YHSwy6uqvk-unsplash.jpg" class="d-block w-100" alt="..." >
+                </div>
+                
               </div>
-              <div class="gallery__img--sliders--slider">
-                <img src="../../assets/home/update-5.jpg" alt="">
-                <img src="../../assets/home/update-6.jpg" alt="">
-                <img src="../../assets/home/update-7.jpg" alt="">
-              </div>
-              <div class="gallery__img--sliders--slider">
-                <img src="../../assets/home/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
-                <img src="../../assets/home/chad-montano-MqT0asuoIcU-unsplash.jpg" alt="">
-                <img src="../../assets/home/update-1.jpg" alt="">
-              </div>            
-              <button value="-" class="btn btn-prev"><</button>
-              <button value="+" class="btn btn-next">></button>
-          </div>
-          </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           </div>
+            
+          
         </div>
       </div>
     </section>
 
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__item">
@@ -332,7 +337,9 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <script src="home.js"></script>
   </body>

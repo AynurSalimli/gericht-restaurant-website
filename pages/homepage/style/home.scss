@@ -37,6 +37,10 @@
       font-size: 55px;
       color: #dcca87;
       line-height: 70px;
+      @include tablet {
+        width: 280px;
+        font-size: 45px;
+      }
       @include mobile {
         width: 200px;
         font-size: 30px;
@@ -98,22 +102,20 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__about {
-    width: 400px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 30px;
-    animation: about 4s;
-    animation-direction: normal;
-    @keyframes about {
-      0% {
-        transform: translateX(-30%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+    // animation: about 4s;
+    // animation-direction: normal;
+    @include tablet {
+      width: 250px;
     }
     &--title {
       color: #dcca87;
@@ -124,10 +126,13 @@
       font-family: "Open Sans";
       font-size: 14px;
       line-height: 33px;
-      width: 400px;
+      width: 360px;
       text-align: end;
       position: relative;
       z-index: 2;
+      @include tablet {
+        width: 250px;
+      }
     }
     &--btn {
       width: 100px;
@@ -155,21 +160,25 @@
     position: absolute;
   }
   &__history {
-    width: 500px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
     animation: text 4s;
     animation-direction: normal;
-    @keyframes text {
-      0% {
-        transform: translateX(30%);
-      }
-      100% {
-        transform: translateX(0);
-      }
+    z-index: 2;
+    @include tablet {
+      width: 250px;
     }
+    // @keyframes text {
+    //   0% {
+    //     transform: translateX(30%);
+    //   }
+    //   100% {
+    //     transform: translateX(0);
+    //   }
+    // }
     &--title {
       color: #dcca87;
       font-size: 40px;
@@ -179,9 +188,12 @@
       font-family: "Open Sans";
       font-size: 14px;
       line-height: 33px;
-      width: 400px;
+      width: 360px;
       position: relative;
       z-index: 2;
+      @include tablet {
+        width: 250px;
+      }
     }
     &--btn {
       width: 100px;
@@ -198,7 +210,11 @@
 
 .special {
   background-color: #000;
-  height: 660px;
+  height: 800px;
+  @include mobile {
+    height: 1250px;
+    padding-top: 20px;
+  }
   &-wrapper {
     display: flex;
     flex-direction: column;
@@ -223,34 +239,60 @@
     justify-content: center;
     gap: 100px;
     padding: 40px;
+    @include tablet {
+      gap: 40px;
+    }
+    @include mobile {
+      gap: 10px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__left {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 24px;
+    @include mobile {
+      text-align: center;
+      gap: 10px;
+    }
     &--title {
       font-size: 30px;
     }
     &--menu {
       font-size: 20px;
       color: #dcca87;
+      @include tablet {
+        font-size: 18px;
+      }
     }
   }
   &__img {
     height: 390px;
+    @include mobile {
+      height: 300px;
+    }
   }
   &__right {
     color: #fff;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 24px;
+    @include mobile {
+      text-align: center;
+      gap: 10px;
+    }
     &--title {
       font-size: 30px;
     }
     &--menu {
       font-size: 20px;
       color: #dcca87;
+      @include tablet {
+        font-size: 18px;
+      }
     }
   }
   &__btn {
@@ -266,30 +308,34 @@
 .chef {
   background-color: #000;
   padding: 40px;
+  @include mobile {
+    height: 1140px;
+  }
   &-wrapper {
     display: flex;
     padding: 40px;
     gap: 40px;
     justify-content: center;
     align-items: center;
+    @include tablet {
+      gap: 0;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__img {
     height: 500px;
-    filter: grayscale(1);
-    transition: 0.4s;
-    overflow: hidden;
 
     img {
       height: 100%;
-      width: 100%;
-      transition: 0.5s;
-      &:hover {
-        transform: scale(1.2);
+      width: 350px;
+      @include mobile {
+        width: 320px;
       }
-    }
-
-    &:hover {
-      filter: grayscale(0);
+      @include tablet {
+        width: 320px;
+      }
     }
   }
 
@@ -298,12 +344,23 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include tablet {
+      width: 375px;
+    }
+    @include mobile {
+      text-align: center;
+      width: 330px;
+      gap: 10px;
+    }
     &--title {
       color: #fff;
     }
     &--header {
       color: #dcca87;
       font-size: 40px;
+      @include mobile {
+        font-size: 25px;
+      }
     }
     &--name {
       font-size: 25px;
@@ -312,6 +369,12 @@
     &--desc {
       width: 500px;
       color: #fff;
+      @include tablet {
+        width: 350px;
+      }
+      @include mobile {
+        width: 100%;
+      }
     }
     &--position {
       font-family: "Open sans";
@@ -330,6 +393,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    @include mobile{
+      gap: 0px;
+    }
   }
   &__title {
     display: flex;
@@ -343,6 +409,20 @@
     padding: 20px;
     font-size: 50px;
     color: #dcca87;
+    @include mobile {
+      text-align: center;
+      font-size: 40px;
+    }
+  }
+  &__img {
+    @include tablet {
+      width: 160px;
+      height: 160px;
+    }
+    @include mobile {
+      width: 130px;
+      height: 130px;
+    }
   }
 
   &__table {
@@ -352,6 +432,9 @@
     align-items: center;
     gap: 60px;
     padding: 30px;
+    @include tablet {
+      grid-template-columns: repeat(1, 1fr);
+    }
     &--about {
       display: flex;
       gap: 20px;
@@ -359,6 +442,13 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        color: #fff;
+        @include mobile {
+          gap: 3px;
+
+        }
+       
+        }
       }
       &--desc {
         color: #fff;
@@ -371,14 +461,19 @@
       &--name {
         color: #dcca87;
         font-size: 32px;
+        @include mobile {
+          font-size: 20px;
+        }
       }
       &--position {
         font-family: "Open Sans";
         color: #fff;
+        @include mobile {
+          font-size: 12px;
+        }
       }
     }
   }
-}
 
 .restaurant {
   background-image: url("../../../assets/home/restaurant.png");
@@ -387,21 +482,39 @@
   object-fit: cover;
   background-size: cover;
   opacity: 0.9;
+  @include tablet {
+    height: 330px;
+  }
+  @include mobile {
+    height: 280px;
+  }
 }
 
 .awards {
   background-color: #000;
   height: 490px;
+  @include mobile {
+    height: 790px;
+  }
   &-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__text {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @include tablet {
+      padding: 5px;
+    }
+    @include mobile {
+      text-align: center;
+    }
     &--title {
       color: #fff;
       padding-top: 40px;
@@ -439,6 +552,13 @@
     left: -80px;
     bottom: -20px;
     line-height: 220px;
+    @include tablet {
+      font-size: 200px;
+      left: -50px;
+    }
+    @include mobile {
+      left: -20px;
+    }
   }
   .div {
     width: 350px;
@@ -448,6 +568,13 @@
     img {
       width: 100%;
       height: 100%;
+      @include tablet {
+        width: 300px;
+      }
+      @include mobile {
+        display: flex;
+        margin: auto;
+      }
     }
   }
 }
@@ -473,14 +600,29 @@
   }
   &__table {
     display: flex;
-    gap: 40px;
+    gap: 25px;
+    @include mobile {
+      flex-direction: column;
+    }
+    @include tablet {
+      gap: 15px;
+    }
     &--item {
       width: 300px;
       display: flex;
       flex-direction: column;
       gap: 20px;
+      @include tablet {
+        width: 240px;
+      }
+      @include mobile {
+        text-align: center;
+      }
       &--img {
-        width: 300px;
+        width: 280px;
+        @include tablet {
+          width: 240px;
+        }
       }
       &--title {
         color: #dcca87;
@@ -509,14 +651,25 @@
 .gallery {
   height: 300px;
   background-color: #000;
-
-  .section-wrapper {
+  @include tablet {
+    height: 400px;
+  }
+  @include mobile {
+    height: 720px;
+  }
+  &-wrapper {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 100px;
     align-items: center;
     width: 100%;
     height: 100%;
+    @include tablet {
+      gap: 50px;
+    }
+    @include mobile {
+      flex-direction: column;
+    }
   }
   &__text {
     width: 30%;
@@ -525,7 +678,12 @@
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
-
+    @include mobile{
+      width: 70%;
+    }
+    &--title {
+      color: #fff;
+    }
     &--header {
       color: #dcca87;
       font-size: 40px;
@@ -546,70 +704,20 @@
   }
   &__img {
     display: flex;
-    height: 300px;
+    height: 250px;
     width: 600px;
     overflow: hidden;
     position: relative;
-
-    &--sliders {
-      transition: 1s;
-      height: 100% !important;
-      width: 100%;
-      position: relative;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      position: relative;
-      &--slider {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 600px !important;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 15px;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s;
-        img {
-          display: inline-block;
-          width: 190px !important;
-          height: 100%;
-          object-fit: cover;
-        }
+    img{
+      @include mobile{
+        height: 250px;
       }
-      .show {
-        opacity: 1;
-        visibility: visible;
-      }
-      button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 9999;
-        height: 30px;
-        width: 30px;
-        cursor: pointer;
-        border: none;
-        outline: none;
-        font-size: 20px;
-        line-height: 30px;
-        transition: 0.1s;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        &:hover {
-          transform: translateY(-50%) scale(1.1);
-        }
-        &:nth-child(even) {
-          left: 5px;
-        }
-        &:nth-child(odd) {
-          right: 5px;
-        }
-      }
+    }
+    @include tablet {
+      width: 500px;
+    }
+    @include mobile{
+      width: 300px;
     }
   }
 }

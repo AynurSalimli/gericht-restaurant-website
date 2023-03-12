@@ -75,6 +75,11 @@
   background-color: #000000;
   height: 300px;
 }
+@media only screen and (max-width: 767px) {
+  .footer {
+    height: 580px;
+  }
+}
 .footer__item {
   display: flex;
   gap: 56px;
@@ -82,6 +87,16 @@
   align-items: center;
   gap: 30px;
   color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .footer__item {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer__item {
+    gap: 35px;
+  }
 }
 .footer__item--contact {
   display: flex;
