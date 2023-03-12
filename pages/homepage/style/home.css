@@ -37,6 +37,22 @@
   position: fixed;
   z-index: 3;
 }
+.header .hamburger {
+  font-size: 25px;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .header .hamburger {
+    display: block;
+    top: -75px;
+    position: relative;
+  }
+}
+.header .cancel {
+  display: none;
+  z-index: 999;
+  top: 300px;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -48,24 +64,43 @@
   font-size: 34px;
   font-family: "Cormorant";
   text-transform: uppercase;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header__logo {
+    top: -68px;
+  }
 }
 .header__menu {
   display: flex;
   gap: 25px;
 }
+@media only screen and (max-width: 767px) {
+  .header__menu {
+    flex-direction: column;
+    width: 247px;
+    background-color: #dcc087;
+    border-radius: 5px;
+    height: 182px;
+    position: relative;
+    top: -15px;
+    transition: 0.5s;
+    gap: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+    transform: translateX(200%);
+  }
+  .header__menu.active {
+    transform: translateX(81%);
+  }
+}
 .header__menu a {
   color: #fff;
   font-size: 16px;
+  text-decoration: none !important;
 }
-@media only screen and (max-width: 991px) {
-  .header__menu a {
-    display: none;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .header .login {
-    display: none;
-  }
+.header__menu a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -386,8 +421,13 @@
 }
 @media only screen and (max-width: 767px) {
   .special {
-    height: 1250px;
+    height: 1250px !important;
     padding-top: 20px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .special {
+    height: 850px;
   }
 }
 .special-wrapper {

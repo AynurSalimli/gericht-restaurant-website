@@ -212,8 +212,11 @@
   background-color: #000;
   height: 800px;
   @include mobile {
-    height: 1250px;
+    height: 1250px !important;
     padding-top: 20px;
+  }
+  @include tablet{
+    height: 850px;
   }
   &-wrapper {
     display: flex;

@@ -15,6 +15,7 @@
   list-style: none;
   text-decoration: none;
   font-family: "Cormorant Upright";
+
 }
 
 ::-webkit-scrollbar {
@@ -38,6 +39,23 @@
   color: #fff;
   position: fixed;
   z-index: 3;
+  .hamburger{
+    font-size: 25px;
+    display: none;
+    @include mobile{
+      display: block;
+      top: -75px;
+      position: relative;
+    }
+  }
+  .cancel{
+    position: relative;
+    z-index: 999;
+    top: -86px;
+    font-size: 22px;
+    display: none;
+}
+  }
   &-wrapper {
     display: flex;
     justify-content: space-between;
@@ -49,25 +67,44 @@
     font-size: 34px;
     font-family: "Cormorant";
     text-transform: uppercase;
+    position: relative;
+    @include mobile{
+      top: -68px;
+    }
   }
   &__menu {
     display: flex;
     gap: 25px;
+    @include mobile{
+      flex-direction: column;
+      width: 400px;
+      background-color: #dcc087;
+      border-radius: 5px;
+      height: 182px;
+      position: relative;
+      top: -15px;
+      transition: 0.5s;
+      gap: 25px;
+      padding-top: 5px;
+      padding-left: 10px;
+      transform: translateX(200%);
+      &.active{
+      transform: translateX(52%); 
+      }
+    }
     a {
       color: #fff;
       font-size: 16px;
-      @include tablet {
-        display: none;
+      text-decoration: none !important;
+      &:hover{
+        text-decoration: underline;
       }
+      
     }
   }
 
-  .login {
-    @include tablet {
-      display: none;
-    }
-  }
-}
+
+
 
 .footer {
   position: relative;

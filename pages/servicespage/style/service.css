@@ -37,6 +37,22 @@
   position: fixed;
   z-index: 3;
 }
+.header .hamburger {
+  font-size: 25px;
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .header .hamburger {
+    display: block;
+    top: -75px;
+    position: relative;
+  }
+}
+.header .cancel {
+  display: none;
+  z-index: 999;
+  top: 300px;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-between;
@@ -48,24 +64,43 @@
   font-size: 34px;
   font-family: "Cormorant";
   text-transform: uppercase;
+  position: relative;
+}
+@media only screen and (max-width: 767px) {
+  .header__logo {
+    top: -68px;
+  }
 }
 .header__menu {
   display: flex;
   gap: 25px;
 }
+@media only screen and (max-width: 767px) {
+  .header__menu {
+    flex-direction: column;
+    width: 247px;
+    background-color: #dcc087;
+    border-radius: 5px;
+    height: 182px;
+    position: relative;
+    top: -15px;
+    transition: 0.5s;
+    gap: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+    transform: translateX(200%);
+  }
+  .header__menu.active {
+    transform: translateX(81%);
+  }
+}
 .header__menu a {
   color: #fff;
   font-size: 16px;
+  text-decoration: none !important;
 }
-@media only screen and (max-width: 991px) {
-  .header__menu a {
-    display: none;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .header .login {
-    display: none;
-  }
+.header__menu a:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -161,10 +196,17 @@
   left: 0;
   width: 100%;
   height: 500px;
-  background-image: url("../assets/services/background.jpg");
+  background-image: url("../../../assets/services/background.jpg");
   background-size: cover;
   background-color: #0c0c0c;
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 0.9;
+}
+@media only screen and (max-width: 767px) {
+  .offer {
+    width: 100%;
+  }
 }
 .offer-wrapper {
   position: absolute;
@@ -181,22 +223,16 @@
   font-size: 5rem;
   margin-bottom: 30px;
 }
-.offer__location {
-  display: flex;
-}
-.offer__location a {
-  color: #fff;
-  font-size: 1rem;
-  margin-right: 30px;
-}
-.offer__location a:hover {
-  border-bottom: 1px solid #fff;
-}
 
 .quality {
   background-color: #0c0c0c;
   color: #fff;
   height: 300px;
+}
+@media only screen and (max-width: 767px) {
+  .quality {
+    height: 400px;
+  }
 }
 .quality-wrapper {
   display: flex;
@@ -206,12 +242,28 @@
   transform: translate(0%, 40%);
   gap: 20px;
 }
+@media only screen and (max-width: 767px) {
+  .quality-wrapper {
+    align-items: center;
+    text-align: center;
+  }
+}
 .quality__title {
   color: #dcca87;
   font-size: 40px;
 }
+@media only screen and (max-width: 767px) {
+  .quality__title {
+    font-size: 30px;
+  }
+}
 .quality__desc {
   font-family: "Open Sans";
+}
+@media only screen and (max-width: 767px) {
+  .quality__desc {
+    font-size: 12px;
+  }
 }
 .quality__btn {
   align-items: center;
@@ -233,7 +285,7 @@
 }
 
 .menu {
-  background: url("../assets/home/coniac.png");
+  background: url("../../../assets/home/coniac.png");
   background-color: #000;
   opacity: 0.3;
   background-position: center;
@@ -243,6 +295,11 @@
   background-color: black;
   opacity: 0.96;
 }
+@media only screen and (max-width: 767px) {
+  .menu {
+    height: 300px;
+  }
+}
 .menu__list {
   color: #fff;
   position: relative;
@@ -251,6 +308,12 @@
   gap: 30px;
   display: flex;
   flex-direction: column;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .menu__list {
+    font-size: 30px;
+  }
 }
 .menu__list--item {
   cursor: pointer;
@@ -277,13 +340,33 @@
   background-color: #262523;
   padding: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .booking-wrapper {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .booking-wrapper {
+    width: 350px;
+  }
+}
 .booking__title {
   font-size: 64px;
   color: #dcca87;
 }
+@media only screen and (max-width: 767px) {
+  .booking__title {
+    font-size: 50px;
+  }
+}
 .booking__options {
   display: flex;
   gap: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .booking__options {
+    flex-direction: column;
+  }
 }
 .booking__options #persons {
   width: 240px;
@@ -306,10 +389,14 @@
   height: 450px;
   max-width: 100%;
   width: 100%;
-  background-image: url("../assets/services/happyhours.jpg");
+  background-image: url("../../../assets/services/happyhours.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.hours-wrapper {
+  position: relative;
+  top: 30%;
 }
 .hours .container {
   height: 500px;
@@ -343,6 +430,16 @@
   align-items: center;
   gap: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .subscribe-wrapper {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .subscribe-wrapper {
+    width: 350px;
+  }
+}
 .subscribe__title {
   color: #fff;
   padding-top: 20px;
@@ -350,6 +447,11 @@
 .subscribe__header {
   color: #dcca87;
   font-size: 35px;
+}
+@media only screen and (max-width: 767px) {
+  .subscribe__header {
+    font-size: 25px;
+  }
 }
 .subscribe__subtitle {
   font-family: "Open Sans";
@@ -375,6 +477,11 @@
 }
 .subscribe__email--input::placeholder {
   color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  .subscribe__email--input {
+    width: 200px;
+  }
 }
 .subscribe__email--btn {
   width: 100px;
