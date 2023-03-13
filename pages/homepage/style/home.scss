@@ -4,6 +4,10 @@
   padding: 70px;
   width: 100%;
   background-color: var(--color-dark);
+  .container{
+    display: flex;
+    justify-content: center;
+  }
   &-wrapper {
     display: flex;
     justify-content: center;
@@ -96,6 +100,10 @@
 .knife {
   width: 100%;
   background-color: var(--color-dark);
+  .container{
+    display: flex;
+    justify-content: center;
+  }
   &-wrapper {
     display: flex;
     justify-content: center;
@@ -210,7 +218,7 @@
   background-color: var(--color-dark);
   height: 800px;
   @include mobile {
-    height: 1250px !important;
+    height: 1320px !important;
     padding-top: 20px;
   }
   @include tablet{
@@ -305,7 +313,6 @@
     cursor: pointer;
   }
 }
-
 .chef {
   background-color:var(--color-dark);
   padding: 40px;
@@ -331,11 +338,9 @@
     img {
       height: 100%;
       width: 350px;
-      @include mobile {
-        width: 320px;
-      }
       @include tablet {
         width: 320px;
+        height: 450px;
       }
     }
   }
@@ -387,7 +392,6 @@
     }
   }
 }
-
 .customer {
   background-color: var(--color-dark);
   &-wrapper {
@@ -475,7 +479,6 @@
       }
     }
   }
-
 .restaurant {
   background-image: url("../../../assets/home/restaurant.png");
   height: 600px;
@@ -490,12 +493,11 @@
     height: 280px;
   }
 }
-
 .awards {
   background-color: var(--color-dark);
   height: 490px;
   @include mobile {
-    height: 790px;
+    height: 1000px;
   }
   &-wrapper {
     width: 100%;
@@ -504,6 +506,7 @@
     align-items: center;
     @include mobile {
       flex-direction: column;
+      justify-content: center;
     }
   }
   &__text {
@@ -528,6 +531,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
+      @include mobile{
+      grid-template-columns: repeat(1, 1fr);
+      }
       &--item {
         display: flex;
         flex-direction: column;
@@ -558,7 +564,7 @@
       left: -50px;
     }
     @include mobile {
-      left: -20px;
+      left: -10px;
     }
   }
   .div {

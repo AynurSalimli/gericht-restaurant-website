@@ -22,9 +22,9 @@ body.light {
   margin: 0 auto;
 }
 
-body {
-  overflow-x: hidden;
-}
+// body {
+//   overflow-x: hidden;
+// }
 
 * {
   margin: 0;
@@ -151,7 +151,7 @@ body {
   background-color: var(--color-dark);
   height: 300px;
   @include mobile {
-    height: 500px;
+    height: 590px;
   }
   &__item {
     display: flex;
