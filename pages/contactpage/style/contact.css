@@ -233,13 +233,6 @@ body {
   font-size: 12px;
 }
 
-body.light .menu__list {
-  color: var(--color-yellow) !important;
-}
-body.light .menu__list p:hover {
-  color: #fff !important;
-}
-
 .offer {
   position: relative;
   left: 0;
@@ -273,193 +266,126 @@ body.light .menu__list p:hover {
   margin-bottom: 30px;
 }
 
-.quality {
+.contact {
   background-color: var(--color-dark);
-  color: var(--color-primary);
-  height: 300px;
+  height: 450px;
 }
 @media only screen and (max-width: 767px) {
-  .quality {
-    height: 400px;
-  }
-}
-.quality-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  transform: translate(0%, 40%);
-  gap: 20px;
-}
-@media only screen and (max-width: 767px) {
-  .quality-wrapper {
-    align-items: center;
-    text-align: center;
-  }
-}
-.quality__title {
-  color: var(--color-yellow);
-  font-size: 40px;
-}
-@media only screen and (max-width: 767px) {
-  .quality__title {
-    font-size: 30px;
-  }
-}
-.quality__desc {
-  font-family: "Open Sans";
-}
-@media only screen and (max-width: 767px) {
-  .quality__desc {
-    font-size: 12px;
-  }
-}
-.quality__btn {
-  align-items: center;
-}
-.quality__btn button {
-  width: 100px;
-  height: 30px;
-  cursor: pointer;
-}
-.quality__btn--first {
-  background-color: var(--color-yellow);
-  outline: none;
-  border: none;
-}
-.quality__btn--second {
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-}
-
-.menu {
-  background: url("../../../assets/home/coniac.png");
-  background-color: var(--color-dark);
-  opacity: 0.3;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  background-color: var(--color-dark);
-  opacity: 0.96;
-}
-@media only screen and (max-width: 767px) {
-  .menu {
+  .contact {
     height: 300px;
   }
 }
-.menu__list {
-  color: var(--color-primary);
-  position: relative;
-  top: 100px;
-  font-size: 40px;
-  gap: 30px;
+.contact-wrapper {
   display: flex;
-  flex-direction: column;
-  padding-left: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.contact img {
+  width: 900px;
+  padding: 50px 30px;
 }
 @media only screen and (max-width: 767px) {
-  .menu__list {
-    font-size: 30px;
+  .contact img {
+    width: 400px;
   }
-}
-.menu__list--item {
-  cursor: pointer;
-}
-.menu__list--item:hover {
-  text-decoration: underline;
-  color: var(--color-primary);
-}
-
-.booking {
-  background-color: var(--color-dark);
-  width: 100%;
-  padding: 40px;
-  display: flex;
-  align-items: center;
-}
-.booking-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 70px;
-  width: 900px;
-  box-shadow: 1rem 1rem 3rem 0rem;
-  background-color: #262523;
-  padding: 20px;
 }
 @media only screen and (max-width: 991px) {
-  .booking-wrapper {
-    width: 500px;
+  .contact img {
+    width: 700px;
   }
 }
+
+.form {
+  height: 500px;
+  background-color: var(--color-dark);
+}
 @media only screen and (max-width: 767px) {
-  .booking-wrapper {
+  .form {
+    height: 750px;
+  }
+}
+.form-wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+.form__text {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 30px;
+  color: var(--color-primary);
+}
+@media only screen and (max-width: 991px) {
+  .form__text {
     width: 350px;
   }
 }
-.booking__title {
-  font-size: 64px;
-  color: var(--color-yellow);
+.form__text--name {
+  height: 50px;
 }
-@media only screen and (max-width: 767px) {
-  .booking__title {
-    font-size: 50px;
-  }
+.form__text--email {
+  height: 50px;
 }
-.booking__options {
-  display: flex;
-  gap: 20px;
+.form__text--msg {
+  height: 100px;
 }
-@media only screen and (max-width: 991px) {
-  .booking__options {
-    flex-direction: column;
-  }
-}
-.booking__options #persons {
-  width: 240px;
-  height: 40px;
-  background-color: var(--color-dark);
-  outline: none;
-  border: none;
-  color: var(--color-primary);
-}
-.booking__btn {
+.form__text--btn {
   width: 100px;
   height: 30px;
   border: none;
   outline: none;
   background-color: var(--color-yellow);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.hours {
-  height: 450px;
-  max-width: 100%;
+.form-wrapper {
   width: 100%;
-  background-image: url("../../../assets/services/happyhours.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.hours-wrapper {
+@media only screen and (max-width: 767px) {
+  .form-wrapper {
+    flex-direction: column;
+  }
+}
+.form__img {
+  width: 350px;
+  height: 450px;
+  padding-top: 66px;
   position: relative;
 }
-.hours .container {
-  height: 500px;
+.form__img img {
+  width: 100%;
+  height: 100%;
 }
-.hours__header {
-  display: flex;
-  justify-content: center;
-  font-size: 4rem;
-  color: var(--color-yellow);
+@media only screen and (max-width: 991px) {
+  .form__img img {
+    width: 300px;
+  }
 }
-.hours__desc {
-  display: flex;
-  justify-content: center;
+@media only screen and (max-width: 767px) {
+  .form__img img {
+    display: flex;
+    margin: auto;
+    width: 280px;
+  }
+}
+.form__img--design {
+  position: absolute;
+  font-size: 200px;
   color: var(--color-primary);
+  opacity: 0.8;
+  left: -39px;
+  top: 230px;
+}
+@media only screen and (max-width: 767px) {
+  .form__img--design {
+    font-size: 150px;
+    left: -10px;
+  }
 }
 
 .subscribe {
@@ -469,6 +395,10 @@ body.light .menu__list p:hover {
   align-items: center;
   padding-bottom: 30px;
   padding: 75px 0;
+}
+.subscribe .container {
+  display: flex;
+  justify-content: center;
 }
 .subscribe-wrapper {
   background-color: #262523;
@@ -541,4 +471,4 @@ body.light .menu__list p:hover {
   outline: none;
   background-color: var(--color-yellow);
   cursor: pointer;
-}/*# sourceMappingURL=service.css.map */
+}/*# sourceMappingURL=contact.css.map */

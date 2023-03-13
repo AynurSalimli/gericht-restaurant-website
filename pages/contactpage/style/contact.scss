@@ -1,0 +1,218 @@
+@import "../../../global/global";
+
+
+.offer {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-image: url("../../../assets/services/background.jpg");
+  background-size: cover;
+  background-color: #0c0c0c;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.9;
+  @include mobile {
+    width: 100%;
+  }
+  &-wrapper {
+    position: absolute;
+    top: 40%;
+    flex-direction: column;
+    display: flex;
+    left: 5%;
+    text-align: center;
+    align-items: center;
+    transform: translate(100%, 0%);
+  }
+  &__title {
+    color: var(--color-yellow);
+    font-size: 5rem;
+    margin-bottom: 30px;
+  }
+}
+
+.contact {
+  background-color: var(--color-dark);
+  height: 450px;
+  @include mobile{
+    height: 300px;
+  }
+  &-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    width: 900px;
+    padding: 50px 30px;
+    @include mobile{
+        width: 400px;
+    }
+    @include tablet{
+        width: 700px;
+    }
+    
+  }
+}
+
+.form{
+    height: 500px;
+    background-color: var(--color-dark);
+    @include mobile{
+        height: 750px;
+    }
+    &-wrapper{
+        justify-content: space-between;
+        display: flex;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        gap: 30px;
+        color: var(--color-primary);
+        @include tablet{
+            width: 350px;
+        }
+    &--name{
+        height: 50px;
+    }
+
+    &--email{
+        height: 50px;
+    }
+
+    &--msg{
+        height: 100px;
+    }
+    &--btn {
+        width: 100px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background-color: var(--color-yellow);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+    }
+
+    &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @include mobile {
+          flex-direction: column;
+        }
+    }
+    &__img{
+        width: 350px;
+        height: 450px;
+        padding-top: 66px;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          @include tablet {
+            width: 300px;
+          }
+          @include mobile {
+            display: flex;
+            margin: auto;
+            width: 280px;
+          }
+        }
+        &--design{
+            position: absolute;
+            font-size: 200px;
+            color: var(--color-primary);
+            opacity: .8;
+            left: -39px;
+            top: 230px;
+            @include mobile{
+                font-size: 150px;
+                left: -10px;
+            }
+        }
+    }
+
+    
+    
+}
+
+.subscribe {
+    background-color: var(--color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding: 75px 0;
+    .container{
+        display: flex;
+        justify-content: center;
+    }
+    &-wrapper {
+      background-color: #262523;
+      height: 270px;
+      width: 800px;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0rem 1rem 3rem 0rem #000;
+      @include tablet {
+        width: 600px;
+      }
+      @include mobile {
+        width: 350px;
+      }
+    }
+    &__title {
+      color: #fff;
+      padding-top: 20px;
+    }
+    &__header {
+      color: var(--color-yellow);
+      font-size: 35px;
+      @include mobile {
+        font-size: 25px;
+      }
+    }
+    &__subtitle {
+      font-family: "Open Sans";
+      font-size: 12px;
+      color: #fff;
+    }
+    &__email {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      padding-top: 20px;
+      &--input {
+        width: 400px;
+        height: 40px;
+        background-color: var(--color-dark);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        padding-left: 5px;
+        &::placeholder {
+          color: var(--color-primary);
+        }
+        @include mobile {
+          width: 200px;
+        }
+      }
+      &--btn {
+        width: 100px;
+        height: 30px;
+        border: none;
+        outline: none;
+        background-color: var(--color-yellow);
+        cursor: pointer;
+      }
+    }
+}

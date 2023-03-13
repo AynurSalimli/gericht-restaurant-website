@@ -1,5 +1,12 @@
 @import "../../../global/global";
 
+body.light .menu__list {
+  color: var(--color-yellow) !important;
+  p:hover {
+    color: #fff !important; 
+  }
+}
+
 .offer {
   position: relative;
   left: 0;
@@ -11,7 +18,7 @@
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.9;
-  @include mobile{
+  @include mobile {
     width: 100%;
   }
   &-wrapper {
@@ -23,21 +30,19 @@
     text-align: center;
     align-items: center;
     transform: translate(100%, 0%);
-    
   }
   &__title {
-    color: #dcca87;
+    color: var(--color-yellow);
     font-size: 5rem;
     margin-bottom: 30px;
   }
-  
 }
 
 .quality {
-  background-color: #0c0c0c;
-  color: #fff;
+  background-color: var(--color-dark);
+  color: var(--color-primary);
   height: 300px;
-  @include mobile{
+  @include mobile {
     height: 400px;
   }
   &-wrapper {
@@ -47,21 +52,21 @@
     text-align: center;
     transform: translate(0%, 40%);
     gap: 20px;
-    @include mobile{
+    @include mobile {
       align-items: center;
       text-align: center;
     }
   }
   &__title {
-    color: #dcca87;
+    color: var(--color-yellow);
     font-size: 40px;
-    @include mobile{
+    @include mobile {
       font-size: 30px;
     }
   }
   &__desc {
     font-family: "Open Sans";
-    @include mobile{
+    @include mobile {
       font-size: 12px;
     }
   }
@@ -73,33 +78,33 @@
       cursor: pointer;
     }
     &--first {
-      background-color: #dcca87;
+      background-color: var(--color-yellow);
       outline: none;
       border: none;
     }
     &--second {
       background-color: transparent;
-      border: 1px solid #fff;
-      color: #fff;
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
     }
   }
 }
 
 .menu {
   background: url("../../../assets/home/coniac.png");
-  background-color: #000;
+  background-color: var(--color-dark);
   opacity: 0.3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  background-color: black;
+  background-color: var(--color-dark);
   opacity: 0.96;
-  @include mobile{
+  @include mobile {
     height: 300px;
   }
   &__list {
-    color: #fff;
+    color: var(--color-primary);
     position: relative;
     top: 100px;
     font-size: 40px;
@@ -107,21 +112,21 @@
     display: flex;
     flex-direction: column;
     padding-left: 10px;
-    @include mobile{
+    @include mobile {
       font-size: 30px;
     }
     &--item {
       cursor: pointer;
       &:hover {
         text-decoration: underline;
-        color: #fff;
+        color: var(--color-primary);
       }
     }
   }
 }
 
 .booking {
-  background-color: #000;
+  background-color: var(--color-dark);
   width: 100%;
   padding: 40px;
   display: flex;
@@ -133,35 +138,36 @@
     align-items: center;
     gap: 70px;
     width: 900px;
+    box-shadow: 1rem 1rem 3rem 0rem;
     background-color: #262523;
     padding: 20px;
-    @include tablet{
+    @include tablet {
       width: 500px;
     }
-    @include mobile{
+    @include mobile {
       width: 350px;
     }
   }
   &__title {
     font-size: 64px;
-    color: #dcca87;
-    @include mobile{
+    color: var(--color-yellow);
+    @include mobile {
       font-size: 50px;
     }
   }
   &__options {
     display: flex;
     gap: 20px;
-    @include tablet{
+    @include tablet {
       flex-direction: column;
     }
     #persons {
       width: 240px;
       height: 40px;
-      background-color: #0000009c;
+      background-color: var(--color-dark);
       outline: none;
       border: none;
-      color: #fff;
+      color: var(--color-primary);
     }
   }
 
@@ -170,7 +176,7 @@
     height: 30px;
     border: none;
     outline: none;
-    background-color: #dcca87;
+    background-color: var(--color-yellow);
     cursor: pointer;
   }
 }
@@ -183,9 +189,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  &-wrapper{
+  &-wrapper {
     position: relative;
-    top: 30%;
   }
   .container {
     height: 500px;
@@ -194,36 +199,37 @@
     display: flex;
     justify-content: center;
     font-size: 4rem;
-    color: #dcca87;
+    color: var(--color-yellow);
   }
 
   &__desc {
     display: flex;
     justify-content: center;
-    color: #fff;
+    color: var(--color-primary);
   }
 }
 
 .subscribe {
-  background-color: #000;
+  background-color: var(--color-dark);
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 30px;
   padding: 75px 0;
-
   &-wrapper {
-    background-color: #0c0c0c;
+    background-color: #262523;
     height: 270px;
     width: 800px;
+    color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    @include tablet{
+    box-shadow: 0rem 1rem 3rem 0rem #000;
+    @include tablet {
       width: 600px;
     }
-    @include mobile{
+    @include mobile {
       width: 350px;
     }
   }
@@ -232,9 +238,9 @@
     padding-top: 20px;
   }
   &__header {
-    color: #dcca87;
+    color: var(--color-yellow);
     font-size: 35px;
-    @include mobile{
+    @include mobile {
       font-size: 25px;
     }
   }
@@ -251,14 +257,14 @@
     &--input {
       width: 400px;
       height: 40px;
-      background-color: #000;
-      border: 1px solid #f5efdb;
-      color: white;
+      background-color: var(--color-dark);
+      border: 1px solid var(--color-primary);
+      color: var(--color-primary);
       padding-left: 5px;
       &::placeholder {
-        color: #fff;
+        color: var(--color-primary);
       }
-      @include mobile{
+      @include mobile {
         width: 200px;
       }
     }
@@ -267,7 +273,7 @@
       height: 30px;
       border: none;
       outline: none;
-      background-color: #dcca87;
+      background-color: var(--color-yellow);
       cursor: pointer;
     }
   }
