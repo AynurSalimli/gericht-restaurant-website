@@ -1,10 +1,10 @@
-@import '../../../global/global';
+@import "../../../global/global";
 
 .flavour {
   padding: 70px;
   width: 100%;
   background-color: var(--color-dark);
-  .container{
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -100,7 +100,7 @@
 .knife {
   width: 100%;
   background-color: var(--color-dark);
-  .container{
+  .container {
     display: flex;
     justify-content: center;
   }
@@ -221,7 +221,7 @@
     height: 1320px !important;
     padding-top: 20px;
   }
-  @include tablet{
+  @include tablet {
     height: 850px;
   }
   &-wrapper {
@@ -314,7 +314,7 @@
   }
 }
 .chef {
-  background-color:var(--color-dark);
+  background-color: var(--color-dark);
   padding: 40px;
   @include mobile {
     height: 1140px;
@@ -398,7 +398,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    @include mobile{
+    @include mobile {
       gap: 0px;
     }
   }
@@ -450,35 +450,33 @@
         color: var(--color-primary);
         @include mobile {
           gap: 3px;
-
-        }
-       
-        }
-      }
-      &--desc {
-        color: var(--color-primary);
-        font-family: "Open Sans";
-        font-style: italic;
-        line-height: 28px;
-        font-size: 12px;
-      }
-
-      &--name {
-        color: var(--color-yellow);
-        font-size: 32px;
-        @include mobile {
-          font-size: 20px;
-        }
-      }
-      &--position {
-        font-family: "Open Sans";
-        color: var(--color-primary);
-        @include mobile {
-          font-size: 12px;
         }
       }
     }
+    &--desc {
+      color: var(--color-primary);
+      font-family: "Open Sans";
+      font-style: italic;
+      line-height: 28px;
+      font-size: 12px;
+    }
+
+    &--name {
+      color: var(--color-yellow);
+      font-size: 32px;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+    &--position {
+      font-family: "Open Sans";
+      color: var(--color-primary);
+      @include mobile {
+        font-size: 12px;
+      }
+    }
   }
+}
 .restaurant {
   background-image: url("../../../assets/home/restaurant.png");
   height: 600px;
@@ -493,6 +491,7 @@
     height: 280px;
   }
 }
+
 .awards {
   background-color: var(--color-dark);
   height: 490px;
@@ -531,8 +530,8 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
-      @include mobile{
-      grid-template-columns: repeat(1, 1fr);
+      @include mobile {
+        grid-template-columns: repeat(1, 1fr);
       }
       &--item {
         display: flex;
@@ -559,6 +558,7 @@
     left: -80px;
     bottom: -20px;
     line-height: 220px;
+    
     @include tablet {
       font-size: 200px;
       left: -50px;
@@ -685,7 +685,7 @@
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
-    @include mobile{
+    @include mobile {
       width: 70%;
     }
     &--title {
@@ -715,16 +715,17 @@
     width: 600px;
     overflow: hidden;
     position: relative;
-    img{
-      @include mobile{
+    img {
+      @include mobile {
         height: 250px;
       }
     }
     @include tablet {
       width: 500px;
     }
-    @include mobile{
+    @include mobile {
       width: 300px;
     }
   }
 }
+
