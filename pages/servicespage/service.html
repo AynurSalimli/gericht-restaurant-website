@@ -25,14 +25,13 @@
             <button class="mode-btn">🌞</button>
           </ul>
           <i class="fa-solid fa-bars hamburger"></i>
-          <i class="fa-solid fa-xmark cancel"></i>
         </div>
       </div>
     </header>
 
     <section class="offer">
       <div class="container">
-        <div class="offer-wrapper">
+        <div class="offer-wrapper" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
           <h1>What we offer</h1>
           <span>
             <a href="../homepage/home.html">Home > </a>
@@ -44,19 +43,21 @@
 
     <section class="quality">
       <div class="container">
-        <div class="quality-wrapper">
-          <h5 class="quality__header">Serving Quality</h5>
+        <div class="quality-wrapper" >
           <h2 class="quality__title">
             We at Gericth are serving our customers for over a decade.
+            <h5 class="quality__header">Serving Quality</h5>
           </h2>
-          <p class="quality__desc">
+          <p class="quality__desc" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
             pharetra adipiscing ultrices vulputate posuere tristique. In sed
             odio nec aliquet eu proin mauris et.
           </p>
           <div class="quality__btn">
             <button class="quality__btn--first">Read More</button>
-            <button class="quality__btn--second">Contact Us</button>
+            <button class="quality__btn--second">
+              <a href="../contactpage/contact.html"> Contact Us</a>
+             </button>
           </div>
         </div>
       </div>
@@ -64,7 +65,7 @@
 
     <section class="booking">
       <div class="container">
-        <div class="booking-wrapper">
+        <div class="booking-wrapper" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
           <div class="booking__title">Book a Table</div>
           <div class="booking__options">
             <select id="persons">
@@ -102,7 +103,7 @@
 
     <section class="hours">
       <div class="container">
-        <div class="hours-wrapper">
+        <div class="hours-wrapper" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
           <h1 class="hours__header">Happy Hours</h1>
           <p class="hours__desc">Monday - Friday(4:00 Pm - 7:00 pm)</p>
         </div>
@@ -111,7 +112,7 @@
 
     <section class="subscribe">
       <div class="container">
-        <div class="subscribe-wrapper">
+        <div class="subscribe-wrapper" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
           <h5 class="subscribe__title">Newsletter</h5>
           <h2 class="subscribe__header">Subscribe to Our Newsletter</h2>
           <p class="subscribe__subtitle">And never miss latest Updates!</p>
@@ -131,38 +132,41 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer__item">
-            <div class="footer__item--contact">
-              <h4 class="footer__item--contact--title">Contact Us</h4>
-              <p class="footer__item--contact--country">
-                9 W 53rd St, New York, NY 10019, USA
-              </p>
-              <p class="footer__item--contact--mobile">
-                +1 212-344-1230 +1 212-555-1230
-              </p>
+            <div class="footer__item--contact" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
+             <h4 class="footer__item--contact--title"> Contact Us</h4>
+            <p class="footer__item--contact--country">
+              9 W 53rd St, New York, NY 10019, USA
+            </p>
+            <p class="footer__item--contact--mobile">
+                 +1 212-344-1230
+                 +1 212-555-1230
+            </p>
             </div>
-            <div class="footer__item--logo">
+            <div class="footer__item--logo" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
               <p class="footer__item--logo--name">gericht</p>
-              <p class="footer__item--logo--desc">
-                "The best way to find yourself is to lose yourself in the
-                service of others.”
-              </p>
+              <p class="footer__item--logo--desc">"The best way to find yourself is to lose yourself in the service of others.”</p>
               <div class="footer__item--logo--social">
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-facebook-f"></i>
               </div>
             </div>
-            <div class="footer__item--working">
-              <h4 class="footer__item--working--title">Working Hours</h4>
+            <div class="footer__item--working" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
+              <h4 class="footer__item--working--title">
+                Working Hours
+              </h4>
               <p class="footer__item--working--hours">
-                Monday-Friday: 08:00 am -12:00 am Saturday-Sunday: 07:00am
-                -11:00 pm
+                Monday-Friday:
+                08:00 am -12:00 am
+                Saturday-Sunday:
+                07:00am -11:00 pm
               </p>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
+
 
     <div class="loader--content">
       <div class="loader">
@@ -183,11 +187,11 @@
     </div>
 
 
-    <script src="../../global/global.js"></script>
-    <script src="service.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+      </script>
+      <script src="service.js"></script>
+      <script src="../../global/global.js"></script>
   </body>
 </html>

@@ -64,13 +64,6 @@ body.light {
     cursor: pointer;
   }
 }
-.header .cancel {
-  position: relative;
-  z-index: 999;
-  top: -86px;
-  font-size: 22px;
-  display: none;
-}
 .header-wrapper {
   display: flex;
   justify-content: space-between;

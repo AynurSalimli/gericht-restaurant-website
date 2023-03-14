@@ -64,13 +64,6 @@ body.light {
       cursor: pointer;
     }
   }
-  .cancel {
-    position: relative;
-    z-index: 999;
-    top: -86px;
-    font-size: 22px;
-    display: none;
-  }
 
   &-wrapper {
     display: flex;
@@ -105,7 +98,6 @@ body.light {
       padding-left: 10px;
       align-items: center;
       justify-content: center;
-
       &.active {
         right: 0;
       }
