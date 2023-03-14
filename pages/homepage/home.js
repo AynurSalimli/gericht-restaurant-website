@@ -1,3 +1,3 @@
-window.onload = function () {
-  removeLoader();
-};
+// window.onload = function () {
+//   removeLoader();
+// };

@@ -1,6 +1,5 @@
 const bar = document.querySelector(".hamburger");
 const menu = document.querySelector(".header__menu");
-const loader = document.querySelector(".loader--content");
 
 function toggleMenu() {
   menu.classList.toggle("active");
@@ -52,11 +51,17 @@ function mode() {
 
 //! delete loader
 
-function removeLoader() {
-  setTimeout(() => {
-    loader.classList.add("fade");
-  }, 2000);
+
+const loader = document.querySelector(".loader--content")
+
+
+function stopLoader(){
+  setTimeout( ()=>{
+    loader.classList.add("fade")
+  }, 2900)
   setTimeout(() => {
     loader.remove();
   }, 2500);
 }
+
+stopLoader()

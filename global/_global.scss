@@ -46,6 +46,7 @@ body.light {
   cursor: pointer;
 }
 
+
 .header {
   width: 100%;
   height: 70px;
@@ -138,6 +139,7 @@ body.light {
     }
   }
 }
+
 
 .footer {
   position: relative;
@@ -272,8 +274,8 @@ $animation-duration: 3500ms;
 
 
 .plate {
-  width: 230px;
-  height: 14px;
+  width: 70px;
+  height: 12px;
   background: $color-plate;
   position: relative;
   border-radius: 6px 6px 2rem 2rem;
@@ -286,34 +288,21 @@ $animation-duration: 3500ms;
     content: "";
     display: block;
     height: 50%;
-    width: 140px;
+    width: 80px;
     background: darken($color-plate, 4%);
     position: absolute;
     top: 100%;
-    left: 50%;
+    left: 93%;
     margin-left: -70px;
     border-radius: 0 0 1rem 1rem;
     z-index: 1;
-  }
-
-  .shadow {
-    position: absolute;
-    top: 130%;
-    left: 50%;
-    margin-left: -90px;
-    z-index: 0;
-    width: 180px;
-    height: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 80%;
-    z-index: 0;
   }
 }
 
 
 .butter {
-  width: 48px;
-  height: 12px;
+  width: 28px;
+  height: 5px;
   background: $color-butter;
   margin: auto;
   border-radius: 2px;
@@ -322,8 +311,8 @@ $animation-duration: 3500ms;
 
 
 .pancake {
-  width: 200px;
-  height: 14px;
+  width: 50px;
+  height: 8px;
   background: $color-pancake;
   border-radius: 1rem;
   box-shadow: inset 0 -2px 0 3px rgba($color-pancake-dark, 0.1);
