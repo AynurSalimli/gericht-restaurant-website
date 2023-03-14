@@ -58,10 +58,8 @@ const loader = document.querySelector(".loader--content")
 function stopLoader(){
   setTimeout( ()=>{
     loader.classList.add("fade")
-  }, 2900)
+  }, 2000)
   setTimeout(() => {
     loader.remove();
   }, 2500);
 }
-
-stopLoader()

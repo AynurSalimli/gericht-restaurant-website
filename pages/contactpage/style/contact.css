@@ -478,7 +478,7 @@ body.light {
 }
 @media only screen and (max-width: 991px) {
   .form__text {
-    width: 300px;
+    width: 285px;
     padding-top: 20px;
   }
 }

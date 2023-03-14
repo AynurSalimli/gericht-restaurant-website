@@ -102,6 +102,10 @@ body.light .menu__list {
       background-color: transparent;
       border: 1px solid var(--color-primary);
       color: var(--color-primary);
+      a{
+        color: var(--color-primary);
+        text-decoration: none;
+      }
     }
   }
 }

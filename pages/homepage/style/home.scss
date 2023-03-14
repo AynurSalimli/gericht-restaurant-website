@@ -70,6 +70,11 @@
       outline: none;
       background-color: var(--color-yellow);
       cursor: pointer;
+      a{
+        color: var(--color-dark);
+        text-decoration: none;
+        list-style: none;
+      }
     }
   }
   &__image {
@@ -119,8 +124,6 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 30px;
-    // animation: about 4s;
-    // animation-direction: normal;
     @include tablet {
       width: 250px;
     }
@@ -137,6 +140,20 @@
       text-align: end;
       position: relative;
       z-index: 2;
+      @include tablet {
+        width: 250px;
+      }
+    }
+    &--more{
+      color: var(--color-primary);
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 33px;
+      width: 360px;
+      text-align: end;
+      position: relative;
+      z-index: 2;
+      display: none;
       @include tablet {
         width: 250px;
       }
@@ -491,7 +508,6 @@
     height: 280px;
   }
 }
-
 .awards {
   background-color: var(--color-dark);
   height: 490px;
@@ -642,6 +658,7 @@
       }
       &--more {
         color: var(--color-yellow);
+        cursor: pointer;
       }
     }
     &--btn {

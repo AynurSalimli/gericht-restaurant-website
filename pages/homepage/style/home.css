@@ -459,6 +459,11 @@ body.light {
   background-color: var(--color-yellow);
   cursor: pointer;
 }
+.flavour__text--btn a {
+  color: var(--color-dark);
+  text-decoration: none;
+  list-style: none;
+}
 @media only screen and (max-width: 767px) {
   .flavour__image {
     margin: auto;
@@ -535,6 +540,22 @@ body.light {
 }
 @media only screen and (max-width: 991px) {
   .knife__about--desc {
+    width: 250px;
+  }
+}
+.knife__about--more {
+  color: var(--color-primary);
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 33px;
+  width: 360px;
+  text-align: end;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .knife__about--more {
     width: 250px;
   }
 }
@@ -1117,6 +1138,7 @@ body.light {
 }
 .update__table--item--more {
   color: var(--color-yellow);
+  cursor: pointer;
 }
 .update__table--btn {
   width: 100px;
