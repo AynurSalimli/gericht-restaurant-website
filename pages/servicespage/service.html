@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/168/168570.png">
     <title>Gericht</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -29,16 +31,16 @@
       </div>
     </header>
 
-    <section class="offer">
-      <div class="container">
-        <div class="offer-wrapper" data-aos = "zoom-in" data-aos-delay = " 100"  data-aos-duration="1000">
-          <h1>What we offer</h1>
-          <span>
-            <a href="../homepage/home.html">Home > </a>
-            <a href="../servicespage/service.html">Service</a>
-          </span>
-        </div>
-      </div>
+    <section class="parallax">
+      <img src="../../images/bg.jpg" alt="bg" id="bg">
+        <img src="../../images/hamburgerr.png" alt="moon" id="hamburgerr" width="200px">
+        <img src="../../images/mountain.png" alt="mountain" id="mountain">
+        <img src="../../images/road.png" alt="road" id="road">
+        <h2 id="text">What we offer</h2>
+        <span>
+          <a href="../homepage/home.html">Home</a>
+          <a href="service.html"></a>
+        </span>
     </section>
 
     <section class="quality">
@@ -53,6 +55,7 @@
             pharetra adipiscing ultrices vulputate posuere tristique. In sed
             odio nec aliquet eu proin mauris et.
           </p>
+          <p class="quality__more">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta quia nemo illum! Voluptates dolores est odio expedita officiis architecto alias quod, velit consequuntur, quisquam incidunt. Cumque minus quibusdam ut qui voluptate dolorem veniam iusto magnam, quod quam distinctio obcaecati sed hic rerum! Nam dicta exercitationem ad provident autem, esse sunt.</p>
           <div class="quality__btn">
             <button class="quality__btn--first">Read More</button>
             <button class="quality__btn--second">
@@ -93,6 +96,9 @@
               <option value="1">14:00 PM</option>
               <option value="1">15:00 PM</option>
               <option value="1">16:00 PM</option>
+              <option value="1">17:00 PM</option>
+              <option value="1">18:00 PM</option>
+              <option value="1">19:00 PM</option>
             </select>
           </div>
 
@@ -185,7 +191,10 @@
       </div>
     </div>
 
+    <button id="scroll"><i class="fas fa-arrow-up"></i></button>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

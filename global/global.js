@@ -54,12 +54,19 @@ function mode() {
 
 const loader = document.querySelector(".loader--content")
 
-
 function stopLoader(){
   setTimeout( ()=>{
     loader.classList.add("fade")
   }, 2000)
   setTimeout(() => {
     loader.remove();
-  }, 2500);
+  }, 2200);
 }
+
+//! scroll to the top of the page 
+const scrollBtn = document.getElementById('scroll')
+
+scrollBtn.addEventListener("click", ()=>{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})

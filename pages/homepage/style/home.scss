@@ -70,7 +70,7 @@
       outline: none;
       background-color: var(--color-yellow);
       cursor: pointer;
-      a{
+      a {
         color: var(--color-dark);
         text-decoration: none;
         list-style: none;
@@ -144,7 +144,7 @@
         width: 250px;
       }
     }
-    &--more{
+    &--more {
       color: var(--color-primary);
       font-family: "Open Sans";
       font-size: 14px;
@@ -195,14 +195,6 @@
     @include tablet {
       width: 250px;
     }
-    // @keyframes text {
-    //   0% {
-    //     transform: translateX(30%);
-    //   }
-    //   100% {
-    //     transform: translateX(0);
-    //   }
-    // }
     &--title {
       color: var(--color-yellow);
       font-size: 40px;
@@ -215,6 +207,19 @@
       width: 360px;
       position: relative;
       z-index: 2;
+      @include tablet {
+        width: 250px;
+      }
+    }
+    &--more {
+      color: var(--color-primary);
+      font-family: "Open Sans";
+      font-size: 14px;
+      line-height: 33px;
+      width: 360px;
+      position: relative;
+      z-index: 2;
+      display: none;
       @include tablet {
         width: 250px;
       }
@@ -574,7 +579,7 @@
     left: -80px;
     bottom: -20px;
     line-height: 220px;
-    
+
     @include tablet {
       font-size: 200px;
       left: -50px;
@@ -601,7 +606,6 @@
     }
   }
 }
-
 .update {
   background-color: var(--color-dark);
   padding-top: 30px;
@@ -613,7 +617,6 @@
     justify-content: center;
     padding-bottom: 30px;
   }
-
   &__title {
     color: var(--color-primary);
   }
@@ -622,7 +625,11 @@
     font-size: 35px;
   }
   &__table {
+    width: 1000px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 25px;
     @include mobile {
       flex-direction: column;
@@ -631,8 +638,8 @@
       gap: 15px;
     }
     &--item {
+      display: none;
       width: 300px;
-      display: flex;
       flex-direction: column;
       gap: 20px;
       @include tablet {
@@ -657,9 +664,25 @@
         font-size: 14px;
       }
       &--more {
+        color: var(--color-primary);
+        font-family: "Open Sans";
+        font-size: 14px;
+        &.hide {
+          display: none;
+        }
+        @include tablet {
+          width: 250px;
+        }
+      }
+      &--btn {
         color: var(--color-yellow);
         cursor: pointer;
       }
+    }
+    &--item:nth-child(1),
+    &--item:nth-child(2),
+    &--item:nth-child(3){
+      display: flex;
     }
     &--btn {
       width: 100px;
@@ -671,7 +694,6 @@
     }
   }
 }
-
 .gallery {
   height: 300px;
   background-color: var(--color-dark);
@@ -745,4 +767,3 @@
     }
   }
 }
-

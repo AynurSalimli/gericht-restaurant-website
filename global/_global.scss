@@ -8,8 +8,14 @@
   --color-yellow: #dcca87;
 }
 
+.awards__design {
+  z-index: 9  ;
+  
+}
+
 * {
   transition: background-color 0.3s linear;
+  user-select: none;
 }
 
 body.light {
@@ -46,14 +52,13 @@ body.light {
   cursor: pointer;
 }
 
-
 .header {
   width: 100%;
   height: 70px;
   background-color: var(--color-dark);
   color: var(--color-primary);
   position: fixed;
-  z-index: 3;
+  z-index: 99999;
   .hamburger {
     font-size: 25px;
     display: none;
@@ -108,6 +113,7 @@ body.light {
       text-decoration: none !important;
       @include mobile {
         font-size: 36px;
+        color: var(--color-dark);
       }
       &:hover {
         text-decoration: underline;
@@ -128,10 +134,10 @@ body.light {
       border: none;
       outline: none;
       font-size: 20px;
+      background-color: var(--color-dark);
     }
   }
 }
-
 
 .footer {
   position: relative;
@@ -227,8 +233,6 @@ $color-plate: #d3ebea;
 
 $animation-duration: 3500ms;
 
-
-
 //! loading animation
 
 .loader--content {
@@ -241,14 +245,12 @@ $animation-duration: 3500ms;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+  z-index: 999999;
   transition: 0.3s;
   &.fade {
     opacity: 0;
   }
-
 }
-
 
 .loader {
   position: absolute;
@@ -257,13 +259,11 @@ $animation-duration: 3500ms;
   transform: translate(-50%, -50%);
 }
 
-
 .tall-stack {
   animation: slide-plate-out $animation-duration;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 }
-
 
 .plate {
   width: 70px;
@@ -291,7 +291,6 @@ $animation-duration: 3500ms;
   }
 }
 
-
 .butter {
   width: 28px;
   height: 5px;
@@ -300,7 +299,6 @@ $animation-duration: 3500ms;
   border-radius: 2px;
   box-shadow: inset 0 -2px 0 2px rgba($color-pancake-dark, 0.1);
 }
-
 
 .pancake {
   width: 50px;
@@ -311,7 +309,6 @@ $animation-duration: 3500ms;
   margin: auto;
 }
 
-
 .falling-element {
   transform: translateY(-100vh);
   animation-timing-function: ease-in;
@@ -319,7 +316,6 @@ $animation-duration: 3500ms;
   animation: element-drop $animation-duration infinite;
   position: relative;
 }
-
 
 $elements: 8;
 $drop-delay: 0.4s;
@@ -372,4 +368,20 @@ $drop-interval: 0.22;
   100% {
     transform: translateX(-100vw);
   }
+}
+
+
+//! scroll to top button
+#scroll{
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  right: 20px;
+  width: 40px;
+  height: 48px;
+  background-color: var(--color-yellow);
+  border: none;
+  outline: none;
+  color: var(--color-dark);
+  font-size: 30px;
 }

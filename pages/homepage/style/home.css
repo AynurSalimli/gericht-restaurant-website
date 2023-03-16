@@ -6,8 +6,15 @@
   --color-yellow: #dcca87;
 }
 
+.awards__design {
+  z-index: 9;
+}
+
 * {
   transition: background-color 0.3s linear;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 body.light {
@@ -50,7 +57,7 @@ body.light {
   background-color: var(--color-dark);
   color: var(--color-primary);
   position: fixed;
-  z-index: 3;
+  z-index: 99999;
 }
 .header .hamburger {
   font-size: 25px;
@@ -112,6 +119,7 @@ body.light {
 @media only screen and (max-width: 767px) {
   .header__menu a {
     font-size: 36px;
+    color: var(--color-dark);
   }
 }
 .header__menu a:hover {
@@ -132,6 +140,7 @@ body.light {
   border: none;
   outline: none;
   font-size: 20px;
+  background-color: var(--color-dark);
 }
 
 .footer {
@@ -232,7 +241,7 @@ body.light {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9;
+  z-index: 999999;
   transition: 0.3s;
 }
 .loader--content.fade {
@@ -372,6 +381,20 @@ body.light {
     transform: translateX(-100vw);
   }
 }
+#scroll {
+  position: fixed;
+  z-index: 99999;
+  bottom: 30px;
+  right: 20px;
+  width: 40px;
+  height: 48px;
+  background-color: var(--color-yellow);
+  border: none;
+  outline: none;
+  color: var(--color-dark);
+  font-size: 30px;
+}
+
 .flavour {
   padding: 70px;
   width: 100%;
@@ -611,6 +634,21 @@ body.light {
 }
 @media only screen and (max-width: 991px) {
   .knife__history--desc {
+    width: 250px;
+  }
+}
+.knife__history--more {
+  color: var(--color-primary);
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 33px;
+  width: 360px;
+  position: relative;
+  z-index: 2;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .knife__history--more {
     width: 250px;
   }
 }
@@ -1090,7 +1128,11 @@ body.light {
   font-size: 35px;
 }
 .update__table {
+  width: 1000px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 25px;
 }
 @media only screen and (max-width: 767px) {
@@ -1104,8 +1146,8 @@ body.light {
   }
 }
 .update__table--item {
+  display: none;
   width: 300px;
-  display: flex;
   flex-direction: column;
   gap: 20px;
 }
@@ -1137,8 +1179,24 @@ body.light {
   font-size: 14px;
 }
 .update__table--item--more {
+  color: var(--color-primary);
+  font-family: "Open Sans";
+  font-size: 14px;
+}
+.update__table--item--more.hide {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .update__table--item--more {
+    width: 250px;
+  }
+}
+.update__table--item--btn {
   color: var(--color-yellow);
   cursor: pointer;
+}
+.update__table--item:nth-child(1), .update__table--item:nth-child(2), .update__table--item:nth-child(3) {
+  display: flex;
 }
 .update__table--btn {
   width: 100px;
