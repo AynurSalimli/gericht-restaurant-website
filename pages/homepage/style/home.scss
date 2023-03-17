@@ -625,8 +625,8 @@
     font-size: 35px;
   }
   &__table {
-    width: 1000px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;

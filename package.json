@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "sweetalert2": "^11.7.3"
   }
 }

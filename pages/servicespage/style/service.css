@@ -412,7 +412,6 @@ body.light .menu__list p:hover {
   justify-content: center;
   align-items: center;
 }
-
 .parallax img {
   position: absolute;
   top: 0;
@@ -423,17 +422,28 @@ body.light .menu__list p:hover {
      object-fit: cover;
   pointer-events: none;
 }
-
-#text {
+.parallax #road {
+  z-index: 2;
+}
+.parallax #breakfast {
+  display: none;
+}
+.parallax #breakfast.aktiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+.parallax #text {
   position: relative;
-  color: var(--color-dark);
+  color: var(--color-primary);
   font-size: 10em;
   font-family: "Poppins";
   font-size: 130px;
-}
-
-#road {
-  z-index: 2;
 }
 
 .quality {
@@ -702,36 +712,12 @@ body.light .menu__list p:hover {
   font-size: 12px;
   color: #fff;
 }
-.subscribe__email {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  padding-top: 20px;
-}
-.subscribe__email--input {
-  width: 400px;
-  height: 40px;
-  background-color: var(--color-dark);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-  padding-left: 5px;
-}
-.subscribe__email--input::-moz-placeholder {
-  color: var(--color-primary);
-}
-.subscribe__email--input::placeholder {
-  color: var(--color-primary);
-}
-@media only screen and (max-width: 767px) {
-  .subscribe__email--input {
-    width: 200px;
-  }
-}
 .subscribe__email--btn {
-  width: 100px;
-  height: 30px;
+  background-color: var(--color-yellow);
+  width: 80px;
   border: none;
   outline: none;
-  background-color: var(--color-yellow);
-  cursor: pointer;
+}
+.subscribe__email--input {
+  width: 250px;
 }/*# sourceMappingURL=service.css.map */

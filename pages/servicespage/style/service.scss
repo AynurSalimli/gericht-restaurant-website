@@ -1,9 +1,9 @@
 @import "../../../global/global";
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins&display=swap");
 body.light .menu__list {
   color: var(--color-yellow) !important;
   p:hover {
-    color: #fff !important; 
+    color: #fff !important;
   }
 }
 
@@ -15,27 +15,37 @@ body.light .menu__list {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.parallax img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  pointer-events: none;
-}
-
-#text{
-    position: relative;
-    color: var(--color-dark);
-    font-size: 10em;
-    font-family: 'Poppins';
-    font-size: 130px;
-}
-
-#road{
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+  #road {
     z-index: 2;
+  }
+  #breakfast {
+    display: none;
+    &.aktiv {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+  }
+  #text {
+    position: relative;
+    color: var(--color-primary);
+    font-size: 10em;
+    font-family: "Poppins";
+    font-size: 130px;
+  }
 }
 
 .quality {
@@ -70,9 +80,9 @@ body.light .menu__list {
       font-size: 12px;
     }
   }
-  &__more{
+  &__more {
     display: none;
-     font-family: "Open Sans";
+    font-family: "Open Sans";
     @include mobile {
       font-size: 12px;
     }
@@ -93,7 +103,7 @@ body.light .menu__list {
       background-color: transparent;
       border: 1px solid var(--color-primary);
       color: var(--color-primary);
-      a{
+      a {
         color: var(--color-primary);
         text-decoration: none;
       }
@@ -142,12 +152,12 @@ body.light .menu__list {
   padding: 40px;
   display: flex;
   align-items: center;
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  @include tablet{
+  @include tablet {
     padding-top: 450px;
   }
   &-wrapper {
@@ -237,7 +247,7 @@ body.light .menu__list {
   align-items: center;
   padding-bottom: 30px;
   padding: 75px 0;
-  .container{
+  .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,32 +285,14 @@ body.light .menu__list {
     font-size: 12px;
     color: #fff;
   }
-  &__email {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    padding-top: 20px;
-    &--input {
-      width: 400px;
-      height: 40px;
-      background-color: var(--color-dark);
-      border: 1px solid var(--color-primary);
-      color: var(--color-primary);
-      padding-left: 5px;
-      &::placeholder {
-        color: var(--color-primary);
-      }
-      @include mobile {
-        width: 200px;
-      }
-    }
-    &--btn {
-      width: 100px;
-      height: 30px;
-      border: none;
-      outline: none;
-      background-color: var(--color-yellow);
-      cursor: pointer;
-    }
+
+  &__email--btn{
+    background-color: var(--color-yellow);
+    width: 80px;
+    border: none;
+    outline: none;
+  }
+  &__email--input {
+    width: 250px;
   }
 }
